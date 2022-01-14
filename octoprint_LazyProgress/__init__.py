@@ -84,13 +84,12 @@ class LazyProgressPlugin(
 
     def _set_progress(self, progress, time_left=None):
         if time_left is None:
-            gcode = f"M117 {progress}"
+            gcode = f"M117 P {progress:.2f}%"
         else:
             mins = math.floor(time_left / 60)
             hrs = math.floor(mins / 60)
             mins = mins - (hrs * 60)
-            secs = time_left - (mins * 60)
-            gcode = f"M117 P{progress:.2f}% T{hrs:.02d}:{mins:.02d}:{secs:.02d}"
+            gcode = f"M117 P{progress:.2f}% T{hrs}::{mins}"
 
         self._printer.commands(gcode)
 

@@ -3,8 +3,10 @@
 ########################################################################################################################
 ### Do not forget to adjust the following variables to your own plugin.
 
+plugin_name = "LazyProgress"
+
 # The plugin's identifier, has to be unique
-plugin_identifier = "LazyProgress"
+plugin_identifier = "OctoPrint-LazyProgress"
 
 # The plugin's python package, should be "octoprint_<plugin identifier>", has to be unique
 plugin_package = "octoprint_LazyProgress"
@@ -21,7 +23,7 @@ plugin_version = "0.1.0"
 plugin_description = """If your printer has no M73 and you don't want to update your firmware. Here you go..."""
 
 # The plugin's author. Can be overwritten within OctoPrint's internal data via __plugin_author__ in the plugin module
-plugin_author = "David Rechkemmer"
+plugin_author = "D4ve-R"
 
 # The plugin's author's mail address.
 plugin_author_email = "david.rechkemmer@gmail.com"
