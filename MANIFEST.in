@@ -1,0 +1,4 @@
+include README.md
+recursive-include octoprint_LazyProgress/templates *
+recursive-include octoprint_LazyProgress/translations *
+recursive-include octoprint_LazyProgress/static *
